@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+class calculator
+{
+   public static void main(String[] args)
+   {
+      float a, b, cal;
+      int choice;
+      Scanner scan = new Scanner(System.in);
+      
+      System.out.println("1. Addition");
+      System.out.println("2. Subtraction");
+      System.out.println("3. Multiplication");
+      System.out.println("4. Division");
+      System.out.print("Enter Your Choice (1-4): ");
+      choice = scan.nextInt();
+      
+      if(choice>=1 && choice<=4)
+      {
+         System.out.print("\nEnter any Two Number: ");
+         a = scan.nextFloat();
+         b = scan.nextFloat();
+         
+         if(choice==1)
+            cal = a+b;
+         else if(choice==2)
+            cal = a-b;
+         else if(choice==3)
+            cal = a*b;
+         else
+            cal = a/b;
+         
+         System.out.println("\nCalculation = " +cal);
+      }
+      else
+         System.out.println("\nIncorrect Choice!!!");
+   } 
+}

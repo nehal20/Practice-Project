@@ -1,0 +1,7 @@
+=> It is a simple calculator Program which can perform basic arithmetic operations like addition, subtraction, multiplication or
+division depending upon the user input.
+
+
+> User can input two numbers using the Scanner class. 
+> Switch case  is used to execute a particular section.
+> Using a switch case to evaluate respective operations.
